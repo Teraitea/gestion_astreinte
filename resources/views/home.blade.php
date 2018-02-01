@@ -1,5 +1,6 @@
 @extends('layouts.app')
 
+@section('title', 'Home')
 @section('content')
 <div class="container">
     <div class="row">
@@ -14,7 +15,10 @@
                         </div>
                     @endif
 
-                    You are logged in!
+                    <a href="{{ url('home/users') }}"><span class="fa fa-users"></span> Infos utilisateur </a> 
+                    <br /> 
+                    <br />
+                    <a href="{{ url('home/news') }}" class="mt-5" ><span class="fa fa-users"></span> Infos des news </a>
                 </div>
             </div>
         </div>

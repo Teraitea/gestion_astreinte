@@ -18,3 +18,9 @@ Route::get('/', function () {
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
+
+// List all the users
+Route::get('/home/users', 'UserController@listUsers');
+// Show only one user
+Route::get('/home/user/{userId}', 'UserController@listUser');
+

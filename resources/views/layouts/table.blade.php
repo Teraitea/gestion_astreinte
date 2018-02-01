@@ -71,8 +71,11 @@
                 </div>
             </div>
         </nav>
-
-        @yield('content')
+        <div class="container">
+            <table class="table table-striped table-hover">
+            @yield('content')
+            </table>
+        </div>    
     </div>
 
     <!-- Scripts -->
