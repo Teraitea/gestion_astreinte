@@ -23,4 +23,9 @@ Route::get('/home', 'HomeController@index')->name('home');
 Route::get('/home/users', 'UserController@listUsers');
 // Show only one user
 Route::get('/home/user/{userId}', 'UserController@listUser');
+// Edit one user
+Route::get('/home/user/{userId}/edit', 'UserController@editUser');
+Route::post('/home/user/{userId}/edit', 'UserController@update');
+// Delete one user
+Route::get('/home/user/{userId}/delete', 'UserController@destroy');
 

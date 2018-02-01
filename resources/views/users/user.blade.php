@@ -15,4 +15,10 @@
             <td>{{ $user->email }}</td>
         </tr>
     </tbody>
+
+@stop
+
+
+@section('links')
+        <a href="{{ url('/home/users') }}"><button class="btn btn-success"> Retour <i class="fa fa-arrow-circle-left" style="font-size:25px;"></i></button></a>
 @stop

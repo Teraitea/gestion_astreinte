@@ -14,11 +14,11 @@
                             {{ session('status') }}
                         </div>
                     @endif
-
-                    <a href="{{ url('home/users') }}"><span class="fa fa-users"></span> Infos utilisateur </a> 
-                    <br /> 
-                    <br />
-                    <a href="{{ url('home/news') }}" class="mt-5" ><span class="fa fa-users"></span> Infos des news </a>
+                    <div class="font-size-design">
+                        <a href="{{ url('home/users') }}"><span class="fa fa-vcard-o"></span> Infos utilisateur </a> 
+                        <br /> 
+                        <a href="{{ url('home/news') }}" class="mt-5" ><span class="fa fa-users"></span> Infos des news </a>
+                    </div>
                 </div>
             </div>
         </div>

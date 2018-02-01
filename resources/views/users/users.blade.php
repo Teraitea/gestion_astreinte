@@ -1,5 +1,11 @@
 @extends('layouts.table')
 
+@if (\Session::has('success'))
+      <div class="alert alert-success">
+        <p>{{ \Session::get('success') }}</p>
+      </div><br />
+    @endif
+    
 @section('content')
     <thead>
         <tr>
@@ -23,4 +29,7 @@
         </tr>
     @endforeach
     </tbody>
+@stop
+@section('links')
+<a href="{{ url('/home/') }}"><button class="btn btn-success"> Accueil <i class="fa fa-home" style="font-size:25px;"></i></button></a>
 @stop
